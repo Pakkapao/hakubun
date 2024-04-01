@@ -15,7 +15,7 @@ import { SubjectType } from "../../types/Subject";
 import { AssignmentQueueItem } from "../../types/AssignmentQueueTypes";
 import AssignmentCharAndType from "./AssignmentCharAndType";
 import AssignmentAnswerInput from "./AssignmentAnswerInput";
-import ReviewItemBottomSheet from "../ReviewItemBottomSheet";
+import AssignmentQueueBottomSheet from "../AssignmentQueueBottomSheet";
 import Emoji from "../Emoji";
 import SvgIcon from "../SvgIcon";
 import RetryIcon from "../../images/retry.svg?react";
@@ -298,7 +298,7 @@ export const AssignmentQueueCard = ({
               Swipe me <Emoji symbol="🙂" label="Smiling face" />
             </SwipeMeHint>
           </AssignmentCardStyled>
-          <ReviewItemBottomSheet currentReviewItem={currentReviewItem} />
+          <AssignmentQueueBottomSheet currentReviewItem={currentReviewItem} />
         </>
       )}
     </AnimatePresence>
